@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\bin\Debug\net6.0\NguyenTuanLinh.exe
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\bin\Debug\net6.0\NguyenTuanLinh.deps.json
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\bin\Debug\net6.0\NguyenTuanLinh.runtimeconfig.json
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\bin\Debug\net6.0\NguyenTuanLinh.dll
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\bin\Debug\net6.0\NguyenTuanLinh.pdb
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.AssemblyInfo.cs
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.dll
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\refint\NguyenTuanLinh.dll
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.pdb
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\NguyenTuanLinh.genruntimeconfig.cache
+C:\Users\Admin\Desktop\linh\NguyenTuanLinh\NguyenTuanLinh\obj\Debug\net6.0\ref\NguyenTuanLinh.dll

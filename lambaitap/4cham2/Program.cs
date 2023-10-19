@@ -7,7 +7,6 @@ public class bonchamhai
     public static void Main(string[] args)
     {
         Saler linh = new Saler(400,"Linh","HN",300);
-        linh.test();
         Console.WriteLine($"{linh.Calculate()}"); 
         linh.Show(linh.Calculate());
         
@@ -27,10 +26,6 @@ public class bonchamhai
             this.Prince = Prince;
         }
 
-        public void test()
-        {
-            Console.WriteLine($"{Prince},{Name},{Addree}");
-        }
         public abstract int Calculate();
         public abstract void Show(int Income);
 
