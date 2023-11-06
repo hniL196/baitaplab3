@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using _7cham1;
+using System.Collections;
 using System.ComponentModel;
 using static System.Reflection.Metadata.BlobBuilder;
 
@@ -6,9 +7,19 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        List<Book> books = new List<Book>();
-       
-        books.Add(new Book(4, "A", "A", "A", 1, 1));
+        List<Book> books = new()
+        {
+            new Book(1, "A", "Tô Hoài", "Nhà Xuất Bản Trẻ", 2014, 50000),
+            new Book(2, "Tắt Đèn", "Ngô Tất Tố", "A", 1941, 79000),
+            new Book(3, "Lão Hạc", "Nam Cao", "Nhà Xuất Bản Hội Nhà Văn", 2014, 80000),
+            new Book(4, "Những Người Tinh Khôi", "Nguyễn Tuân", "Nhà Xuất Bản Hội Nhà Văn", 1942, 49000),
+            new Book(5, "Dế Mèn Phiêu Lưu Ký", "Tô Hoài", "Nhi Dong", 2005, 109000),
+            new Book(6, "Bố Già", "Mario Puzo", "Nhà Xuất Bản Thanh Niên", 1969, 50000),
+            new Book(7, "Số Đỏ", "Hồ Anh Thái", "Nhà Xuất Bản Kim Đồng", 2014, 150000),
+            new Book(8, "Người Mẹ Cầm Súng", "Nguyễn Nhật Ánh", "Nhi Dong", 2001, 129000),
+            new Book(9, "Tôi Thấy Hoa Vàng Trên Cỏ Xanh", "Nguyễn Nhật Ánh", "Nhà Xuất Bản Trẻ", 1991, 99000),
+            new Book(10, "Dế Mèn Phiêu Lưu Ký", "Tô Hoài", "Nhà Xuất Bản Trẻ", 2005, 100000)
+        };
 
         for (int i = 0; i < books.Count; i++)
         {
@@ -17,86 +28,17 @@ public class Program
 
         ManagerBook managerBook = new ManagerBook();
 
-        managerBook.Addbook(books);
+        Console.WriteLine("\nSap xep theo gia tang dan\n");
+        managerBook.sortbyPrice(books);
 
-        for (int i = 0; i < books.Count; i++)
-        {
-            Console.WriteLine($"{books[i]} , {i}");
-        }
+        Console.WriteLine("\nTim kiem theo ten\n");
+        managerBook.searchbyName(books);
 
-        managerBook.deleteBook(books);
+        Console.WriteLine("\nNhung cuon sach xuat ban nam 2014 la :\n");
+        managerBook.showbookyear2014(books);
 
+        Console.WriteLine("\nNha xuat ban Nhi Dong");
+        managerBook.removeAuthorNhiDong(books);
     }
 }
 
-    public class Book
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string Publisher { get; set; }
-        public int Year { get; set; }
-        public double Prince { get; set; }
-
-    public Book() { }
-
-    public Book(int Id, string Title, string Author, string Publisher, int Year, double Prince)
-    {
-        this.Id = Id;
-        this.Title = Title;
-        this.Author = Author;
-        this.Publisher = Publisher;
-        this.Year = Year;
-        this.Prince = Prince;
-    }
-
-    public override string ToString()
-    {
-        return string.Format($"{Id} - {Title} - {Author} - {Publisher} - {Year} - {Prince}");
-    }
-}
-
-    public class ManagerBook
-{
-    public void Addbook(List<Book> books)
-    {
-        Book book = new Book();
-
-        Console.WriteLine("Nhap id:");
-        book.Id = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Nhap title:");
-        book.Title = Console.ReadLine();
-        Console.WriteLine("Nhap Author:");
-        book.Author = Console.ReadLine();
-        Console.WriteLine("Nhap Publisher:");
-        book.Publisher = Console.ReadLine();
-        Console.WriteLine("Nhap Year:");
-        book.Year = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Nhap Prince:");
-        book.Prince = Convert.ToInt32(Console.ReadLine());
-
-        books.Add(book);
-    }
-
-    public void deleteBook(List<Book> books)
-    {
-        Book book = new Book();
-
-        Console.WriteLine("Nhap id can xoa:");
-        int choice = Convert.ToInt32(Console.ReadLine());
-
-        for (int i = 0; i < books.Count; i++)
-        {
-            if(choice == books[i].Id)
-            {
-                Console.WriteLine("Check");
-                books.RemoveAt(i);
-            }
-        }
-
-        for (int i = 0;i < books.Count; i++)
-        {
-            Console.WriteLine(books[i]);
-        }
-    }
-}
